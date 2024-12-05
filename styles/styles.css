@@ -1,0 +1,349 @@
+body {
+    background-image: url(../images/fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+:root {
+    --font-family: "Lato", sans-serif;
+    --second-family: "Jura", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    margin-top: 50px;
+}
+.header__img{
+    width: 50px;
+    height: 50px;
+}
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    margin: 0 100px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 31px;
+
+}
+   
+
+header nav ul li a{
+    font-family: var(--font-family);
+    transition: 1s ease-in;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(102, 184, 184);
+    max-width: fit-content;
+    border-radius: 20%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo__name{
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.airdrop-info{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.airdrop-info__subtitle{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-weight: 400;
+
+    max-width: 800px;
+    width: 100%;
+}
+
+
+
+.airdrop-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.airdrop-details__button-container{
+    margin-top: 30px;
+}
+.airdrop-details__button{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(209, 68, 68);
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-weight: 600;
+    max-width: fit-content;
+    transition: 1s ease-in-out;
+}
+
+.airdrop-details__button:focus{
+    background-color: gold;
+    transform: scale(1.2);
+}
+
+.airdrop-details__subtitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-weight: 400;
+}
+.airdrop-details__subtitle-link{
+   border: 4px dashed salmon;
+   background-color: chocolate;
+}
+
+.airdrop-details__subtitle strong{
+    margin-right: 10px;
+}
+
+
+.registration{
+    margin-top: 50px;
+}
+
+.registration__info{
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 50px 100px;
+    background-color: rgb(87, 105, 169);
+}
+
+.registration__title{
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.registration__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.registration__form label,
+.registration__form input,
+.registration__form-button-container {
+    flex: 1 1 auto; 
+}
+form input{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+form label{
+    text-align: center;
+}
+
+.registration__form-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.registration__form-button{
+    flex: 0 1 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(191, 162, 162);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s ease;
+   }
+
+.registration__form-button:hover{
+    transform: scale(0.8);
+    background-color: chartreuse;
+}
+
+.gallery{
+    margin-top: 50px;
+}
+
+.gallery__info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.gallery__image{
+    max-width: 1000px;
+    width: 100%;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
+    }
+
+    .footer__nav{
+        margin-top: 20px;
+    }
+
+    .footer__contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        }
+
+    .footer__contact-info--2{
+       margin-top: 125px;
+    }
+
+    .footer__social-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+ 
+    .footer__social-item-link{
+        font-family: var(--second-family);
+    }
+
+    .footer__social-item-link:hover{
+        color: crimson;
+    }
+
+    .footer__social-icon{
+        width: 50px;
+        height: 50px;
+    }
+    .footer__info-page{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer__nav--2{
+        margin-top: 40px;
+    }
+    .footer__page-item-link:hover{
+        font-size: 150%;
+        color: rgb(220, 226, 43);
+    }
+    
+    @media (min-width: 320px) and (max-width: 768px) {
+        .header__nav{
+            display: none;
+        }
+       
+        .header__flex{
+            justify-content: space-around;
+            
+        }
+       
+        .open{
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            padding: 35px;
+            gap: 18px;
+            background-color: #222;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            }
+        .header__nav-list{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .header__button-mobile{
+            display: block;
+            max-width: 70px;
+            z-index: 1;
+        }
+       .container{
+        display: block;
+       }
+       .airdrop-info{
+        margin-top: 100px;
+       }
+       .gallery__image{
+        min-width: 300px;
+        width: 100%;
+       
+       }
+       .airdrop-info__subtitle{
+        max-width: 400px;
+        width: 100%;
+    }
+       .footer{
+        flex-direction: column;
+       }
+       .footer__contact-info--2{
+        margin: 20px auto;
+       }
+       }
+
+    @media (min-width: 769px) {
+        .header__button-mobile{
+            display: none;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .airdrop-info__subtitle{
+            max-width: 400px;
+            width: 100%;
+        }
+        .gallery__image{
+            max-width: 500px;
+            width: 100%;
+        }
+        .footer{
+            flex-direction: column;
+           }
+           .footer__contact-info--2{
+            margin: 20px auto;
+           }
+    }
+
+    

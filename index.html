@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airdrop Token</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body>
+    <header class="header container">
+        <div class="header__flex">
+        <div class="logo">
+            <img class="header__img" src="./images/bitcoin.png" alt="Token Logo">
+            <h1 class="logo__name">Bitcoin</h1>
+        </div>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item "><a class=" header__nav-list-item-link" href="#home">Головна</a></li>
+                <li class="header__nav-list-item"><a class=" header__nav-list-item-link" href="#airdrop">Airdrop</a></li>
+                <li class="header__nav-list-item"><a class=" header__nav-list-item-link" href="#faq">FAQ</a></li>
+                <li class="header__nav-list-item"><a class=" header__nav-list-item-link" href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <button class="header__button-mobile"><img src="./images/menu.png" alt="menu" class="header__button-mobile-img"></button>
+    </div>
+    </header>
+
+
+    <main >
+        <section class="airdrop-info">
+            <h2>Bitcoin (BTC)</h2>
+            <p class="airdrop-info__subtitle airdrop-info__subtitle--1">Bitcoin - це перша децентралізована цифрова валюта, створена для забезпечення 
+                безпечних та анонімних транзакцій без посередників.</p>
+            <p class="airdrop-info__subtitle airdrop-info__subtitle--2">Призначена для зберігання вартості та проведення міжнародних платежів</p>
+            <article class="airdrop-details">
+                <p class="airdrop-details__subtitle"><strong>Дата початку:</strong> 01.01.2025</p>
+                <p class="airdrop-details__subtitle"><strong>Дата закінчення:</strong> 31.01.2025</p>
+                <p class="airdrop-details__subtitle"><strong>Загальна кількість токенів:</strong> 1,000,000</p>
+                <p class="airdrop-details__subtitle"><strong>Інструкція:</strong> 
+                    <a href="https://tradersunion.com/ua/interesting-articles/best-cryptocurrency-to-invest/best-meme-coins/dogs-review/dogs-airdrop/" target="_blank" class="airdrop-details__subtitle-link">
+                        Як взяти участь у airdrop?</a>
+                    </p>
+                <div class="airdrop-details__button-container">
+                <button class="airdrop-details__button">Взяти участь</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="gallery container">
+            <div class="gallery__info">
+            <h2 class="gallery__info-title">Інфографіка</h2>
+            <img class="gallery__image" src="./images/chart.png" alt="Token Chart">
+            </div>
+        </section>
+
+        <section class="registration container">
+            <div class="registration__info">
+            
+            <form class="registration__form">
+                
+                <legend class="registration__title">Реєстрація</legend>
+                <label for="name">Ім’я:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="wallet">Гаманець:</label>
+                <input type="text" id="wallet" name="wallet" required>
+                <div class="registration__form-button-container">
+                    <button class="registration__form-button" type="submit">Подати заявку</button>
+                    <span id="success-message" style="display: none; color: green; font-weight: bold; margin: auto 10px; ">
+                        Дякуємо за реєстрацію!
+                    </span>
+                </div>
+           
+            </form>
+           
+        </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <article class="footer__contact-info footer__contact-info--1">
+            <h2>Контактна інформація</h2>
+            <nav class="footer__nav footer__nav--1">
+            <ul class="footer__info-social-media">
+                <li class="footer__social-item">
+                    <img src="./images/twitter.png" alt="twitter" class="footer__social-icon">
+                    <a href="https://www.twitter.com" class="footer__social-item-link">Twitter</a>
+                </li>
+                <li class="footer__social-item">
+                    <img src="./images/facebook.png" alt="facebook" class="footer__social-icon">
+                    <a href="https://www.facebook.com" class="footer__social-item-link">Facebook</a>
+                </li>
+                <li class="footer__social-item">
+                    <img src="./images/linkd.png" alt="linkedin" class="footer__social-icon">
+                    <a href="https://www.linkedin.com" class="footer__social-item-link">Linkedin</a>
+                </li>
+            </ul>
+        </nav>
+        </article>
+        <article class="footer__contact-info footer__contact-info--2">
+        <p><a href="#privacy">Усі права захищені © 2024</a></p>
+    </article>
+        <article class="footer__contact-info footer__contact-info--3">
+            <h2>Додаткові сторінки</h2>
+            <nav  class="footer__nav footer__nav--2">
+                <ul class="footer__info-page">
+                    <li class="footer__page-item"><a href="https://coinmarketcap.com/currencies/bitcoin/" target='_blank' class="footer__page-item-link">Про валюту</a></li>
+                    <li class="footer__page-item"><a href="https://www.google.com.ua/maps/place/Gorodok+Gallery/@50.4879429,30.4696346,13.5z/data=!3m1!5s0x40d4cdfa2ab23355:0x8fc2a96936a13d98!4m6!3m5!1s0x40d4cdfbe0555555:0x134afef637a401c!8m2!3d50.489934!4d30.4951873!16s%2Fg%2F11bz0196gy?hl=ru&entry=ttu&g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D" target='_blank' class="footer__page-item-link">Де знаходимось?</a></li>
+                    <li class="footer__page-item"><a href="https://academy.binance.com/uk/start-here?utm_campaign=googleadsxacademy&utm_source=googleadwords_int&utm_medium=cpc&ref=HDYAHEES&gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDCt8IQIu58FNq2OfzfWo59dTyuMmPtj2TwxBHljBwJzpK7BKwq5coAaAo4kEALw_wcB" target='_blank' class="footer__page-item-link">Детальніше про нас</a></li>
+                </ul>
+            </nav>
+            
+           
+           
+        </article>
+        </footer>
+
+    
+    <script src="./scripts/success.js"></script>
+    <script src="./scripts/adaptive.js"></script>
+</body>
+</html>
