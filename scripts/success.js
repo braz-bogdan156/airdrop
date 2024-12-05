@@ -21,4 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log('Form or success message elements not found');
     }
+    
 });
